@@ -12,7 +12,7 @@ stages:
     cloudFoundryDeploy: false
     cfApiEndpoint: "https://api.cf.sap.hana.ondemand.com"
     cfOrg: "COELAC_dev-env"
-    cfSpace: "MALDAY"
+    cfSpace: "DEMO"
     cfAppName: "DevOpsBTP"
     cfCredentialsId: "deploy-to-cf"
     uiVeri5ExecuteTests: false
@@ -20,7 +20,7 @@ stages:
     cloudFoundryDeploy: true
     cfApiEndpoint: "https://api.cf.sap.hana.ondemand.com"
     cfOrg: "COELAC_dev-env"
-    cfSpace: "MALDAY"
+    cfSpace: "DEMO"
     cfAppName: "DevOpsBTP"
     cfCredentialsId: "deploy-to-cf"
     tmsUpload: false
