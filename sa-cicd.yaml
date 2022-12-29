@@ -1,0 +1,47 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: DevOpsBTP-cicd
+---
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: DevOpsBTP-cicd
+rules:
+  - apiGroups:
+      - ""
+      - extensions
+      - batch
+      - apps
+      - gateway.kyma-project.io
+      - servicecatalog.k8s.io
+    resources:
+      - deployments
+      - replicasets
+      - pods
+      - jobs
+      - configmaps
+      - apirules
+      - serviceinstances
+      - servicebindings
+      - services
+      - secrets
+    verbs:
+      - create
+      - update
+      - patch
+      - delete
+      - get
+      - list
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: DevOpsBTP-cicd-binding
+subjects:
+  - kind: ServiceAccount
+    name: DevOpsBTP-cicd
+roleRef:
+  kind: Role
+  name: DevOpsBTP-cicd
+  apiGroup: rbac.authorization.k8s.io
