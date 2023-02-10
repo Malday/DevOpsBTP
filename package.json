@@ -1,5 +1,5 @@
 {
-  "name": "DevOpsBTP",
+  "name": "DevOpsBTP
   "version": "0.0.1",
   "repository": "<Add your repository here>",
   "license": "UNLICENSED",
@@ -84,18 +84,19 @@
             }
           }
         }
-      },
+      }
+      ,
       "db": {
         "[production]": {
-          "kind": "hana-cloud",
-          "model": [
+          "kind": "hana-cloud"
+          ,"model": [
             "db/data-config",
             "db/data-test"
           ]
         },
         "[development]": {
-          "kind": "sql",
-          "model": [
+          "kind": "sql"
+          ,"model": [
             "db/data-config",
             "db/data-test"
           ]
@@ -104,13 +105,14 @@
           "db",
           "srv"
         ]
-      },
+      }
+      ,
       "NearEarthObjectWebService": {
         "kind": "rest",
         "impl": "srv/external/NearEarthObjectWebService.js",
         "credentials": {
           "[production]": {
-            "destination": "DevOpsBTP-NASA-api",
+            "destination": "CoE-NASA-api",
             "path": "neo/rest/v1"
           },
           "[development]": {
