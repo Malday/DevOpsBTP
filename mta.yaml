@@ -19,7 +19,7 @@ modules:
     type: hdb
     path: gen/db
     build-parameters:
-      database_id: 31315235-8ed3-4f01-a63c-b41a0690eaea
+      database_id: 6afe7ab6-aee9-446e-a70f-9abd2e52eeca
       ignore:
         - default-*.json
         - .env
@@ -124,7 +124,7 @@ resources:
   # ------------------------------------------------------------
     type: com.sap.xs.hdi-container
     parameters:
-      database_id: 31315235-8ed3-4f01-a63c-b41a0690eaea
+      database_id: 6afe7ab6-aee9-446e-a70f-9abd2e52eeca
       service: hana
       service-plan: hdi-shared
     properties:
