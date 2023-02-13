@@ -128,7 +128,7 @@ resources:
       service: hana
       service-plan: hdi-shared
       config:
-        database_id: 31315235-8ed3-4f01-a63c-b41a0690eaea
+        database_id: 6afe7ab6-aee9-446e-a70f-9abd2e52eeca
     properties:
       hdi-service-name: ${service-name}
 
