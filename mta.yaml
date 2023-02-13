@@ -124,6 +124,7 @@ resources:
   # ------------------------------------------------------------
     type: com.sap.xs.hdi-container
     parameters:
+      database_id: 31315235-8ed3-4f01-a63c-b41a0690eaea
       service: hana
       service-plan: hdi-shared
     properties:
