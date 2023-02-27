@@ -33,4 +33,4 @@ steps:
     mtaDeployParameters: "-f --version-rule ALL"
   tmsUpload:
     nodeName: "QAS"
-    credentialsId: "tms-sk"
+    credentialsId: "cicd-ctms"
