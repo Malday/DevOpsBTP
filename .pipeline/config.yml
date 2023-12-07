@@ -6,6 +6,9 @@ stages:
     mavenExecuteStaticCodeChecks: false
     npmExecuteLint: true
   Additional Unit Tests:
+    steps:
+      testmarcao: 
+        sh 'uname -a'
     npmExecuteScripts: false
     karmaExecuteTests: false
   Acceptance:
@@ -34,6 +37,5 @@ steps:
   tmsUpload:
     nodeName: "DEV"
     credentialsId: "cicd-ctms"
-  testmarcao: 
-    sh 'uname -a'
-    
+  
+
