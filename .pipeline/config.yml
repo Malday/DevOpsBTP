@@ -5,10 +5,10 @@ stages:
   Build:
     mavenExecuteStaticCodeChecks: false
     npmExecuteLint: true
-  Additional Unit Tests:
     steps:
       testmarcao: 
         sh 'uname -a'
+  Additional Unit Tests:
     npmExecuteScripts: false
     karmaExecuteTests: false
   Acceptance:
