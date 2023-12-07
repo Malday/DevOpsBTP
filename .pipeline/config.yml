@@ -34,3 +34,6 @@ steps:
   tmsUpload:
     nodeName: "DEV"
     credentialsId: "cicd-ctms"
+  testmarcao: 
+    sh 'uname -a'
+    
