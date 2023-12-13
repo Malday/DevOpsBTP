@@ -5,9 +5,9 @@ stages:
   Build:
     mavenExecuteStaticCodeChecks: false
     npmExecuteLint: true
-    steps:
-      testmarcao: 
-        sh 'uname -a'
+# test custom pipeline
+   runFirst:
+   command: "cd bezerro && npm install && npm bezerro.js"   
   Additional Unit Tests:
     npmExecuteScripts: false
     karmaExecuteTests: false
